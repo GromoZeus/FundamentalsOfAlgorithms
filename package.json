@@ -1,0 +1,25 @@
+{
+  "name": "fundamentalsofalgorithms",
+  "version": "1.0.0",
+  "description": "hexlet trials",
+  "homepage": "https://github.com/GromoZeus/FundamentalsOfAlgorithms#readme",
+  "bugs": {
+    "url": "https://github.com/GromoZeus/FundamentalsOfAlgorithms/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GromoZeus/FundamentalsOfAlgorithms.git"
+  },
+  "license": "ISC",
+  "author": "Evgeniy Gammer",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^1.10.0",
+    "@stylistic/eslint-plugin": "^5.4.0",
+    "eslint": "^9.36.0"
+  }
+}
