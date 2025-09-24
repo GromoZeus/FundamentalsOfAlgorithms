@@ -8,20 +8,12 @@ const solution = (arr) => {
   let i = 0
   let j = arr.length - 1
   while (i <= j) {
-    if (arr[i] % 2 !== 0) {
-      i += 1
-    }
-    else {
+    if (arr[i] % 2 === 0) {
       stackEven.push(i)
-      i += 1
     }
 
-    if (arr[j] % 2 === 0) {
-      j -= 1
-    }
-    else {
+    if (arr[j] % 2 !== 0) {
       stackOdd.push(j)
-      j -= 1
     }
 
     if (stackEven.length > 0 && stackOdd.length > 0) {
@@ -31,12 +23,15 @@ const solution = (arr) => {
       arr[ipop] = arr[jpop]
       arr[jpop] = temp
     }
+
+    i += 1
+    j -= 1
   }
   return arr
 }
 
 export default solution
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 100, 101]
+const arr = [3, 1, 12, 7, 8, 1, 6, 4]
 
 console.log(solution(arr))
